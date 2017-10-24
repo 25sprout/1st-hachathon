@@ -1,0 +1,17 @@
+{
+	"domain": {
+		"production": {
+			"value": "www.example.com",
+			"ssl": false
+		}
+	},
+	"pages": {
+		"index": {
+			"entry": "index"
+		}
+	},
+	"port": {
+		"webpackServer": 3000,
+		"browserSyncServer": 8080
+	}
+}

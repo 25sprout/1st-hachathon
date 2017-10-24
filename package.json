@@ -1,0 +1,72 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "25sprout 1th hackathon",
+  "scripts": {
+    "lint:js": "eslint src/js --config .eslintrc.json",
+    "lint:css": "stylelint src/css/*.css src/css/**/*.css --config .stylelintrc.json",
+    "lint": "npm run lint:css && npm run lint:js",
+    "clean": "rm -rf build npm-debug.log",
+    "dev": "cross-env NODE_ENV=dev babel-node server.js",
+    "predemo": "npm run clean",
+    "demo": "cross-env NODE_ENV=demo webpack --config webpack.config.build.babel.js",
+    "prebuild": "npm run clean",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.build.babel.js",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "25sprout",
+    "Hackathon"
+  ],
+  "author": "Eddie Wen <eddiewen.tw@gmail.com> (http://eddiewen.me)",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "browser-sync": "^2.18.1",
+    "browser-sync-webpack-plugin": "^1.1.3",
+    "cross-env": "^3.1.3",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "ip": "^1.1.4",
+    "postcss": "^5.2.5",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-loader": "^1.1.1",
+    "postcss-scss": "^0.4.0",
+    "pug": "^2.0.0-beta6",
+    "pug-lint": "^2.4.0",
+    "pug-lint-loader": "^0.0.4",
+    "pug-loader": "^2.3.0",
+    "standard-version": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "stylelint": "^7.9.0",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-order": "^0.4.1",
+    "stylelint-webpack-plugin": "^0.7.0",
+    "svgo-loader": "^1.1.2",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "whatwg-fetch": "^2.0.0"
+  },
+  "private": true
+}
