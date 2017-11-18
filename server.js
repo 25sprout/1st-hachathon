@@ -1,7 +1,6 @@
 import webpack from 'webpack';
 import WebpackDevServer from 'webpack-dev-server';
 import config from './webpack.config.dev.babel';
-import ip from 'ip';
 import websiteJson from './config/website.json';
 
 new WebpackDevServer(webpack(config), {
