@@ -61,7 +61,6 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
-    "babel-polyfill": "^6.23.0",
     "whatwg-fetch": "^2.0.0"
   },
   "private": true

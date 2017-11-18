@@ -5,16 +5,7 @@ import base from './webpack.config.babel';
 import websiteJson from './config/website.json';
 
 const webpackBuildConfig = {
-	entry: (() => {
-		for (const key in base.entry) {
-			if ({}.hasOwnProperty.call(base.entry, key)) {
-				Object.assign(base.entry, {
-					[key]: ['babel-polyfill', base.entry[key]],
-				});
-			}
-		}
-		return base.entry;
-	})(),
+	entry: base.entry,
 	output: {
 		path: path.join(__dirname, 'build'),
 		filename: '[hash:13].js',
