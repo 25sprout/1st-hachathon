@@ -28,7 +28,7 @@ const webpackBuildConfig = {
 		base.plugins.loaderOptionsPlugin,
 
 		new webpack.optimize.UglifyJsPlugin({
-			sourceMap: true,
+			sourceMap: false,
 		}),
 
 		// Extract the CSS into a seperate file
