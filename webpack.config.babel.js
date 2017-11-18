@@ -19,7 +19,7 @@ const webpackBaseConfig = {
 	})(),
 	output: {
 		path: path.join(__dirname, 'build'),
-		filename: '[hash:13].js',
+		filename: '[hash:5].js',
 		publicPath: '/',
 	},
 	module: {
@@ -37,7 +37,7 @@ const webpackBaseConfig = {
 				loader: 'url-loader',
 				options: {
 					limit: 10000,
-					name: '[hash:13].[ext]',
+					name: '[hash:7].[ext]',
 				},
 			},
 			{
