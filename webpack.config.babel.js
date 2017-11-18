@@ -110,7 +110,6 @@ const webpackBaseConfig = {
 						removeScriptTypeAttributes: true,
 						removeStyleLinkTypeAttributes: true,
 					},
-					chunks: ['bundle', page],
 				})
 			);
 
