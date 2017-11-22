@@ -13,4 +13,8 @@ export const deadline = {
 	minute: '00',
 };
 
+/* eslint-disable max-len */
+export const catTypeing = 'aljjjgaaaaaaaaaaaaaaaaaaaaaaam,32;iop9gy7uk/lm;\\\\\\\\\\\\\\\\\\\\\\\\\\aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaayyyyyyyy................s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@iooooooooooooooooooooooooooooooooooooooifffffffffffffffffffffffffffffff';
+/* eslint-enable max-len */
+
 export default 'CONFIG';

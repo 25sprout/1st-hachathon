@@ -1,6 +1,10 @@
+import TypeWriting from 'typewriting';
+import palette from '../../config/palette.json';
+
 import '../css/common.css';
 import '../css/index.css';
-import { hachathonDate, startTiming } from './appConfig';
+import '../css/confused-typing.css';
+import { hachathonDate, startTiming, catTypeing } from './appConfig';
 
 const nowTimeSeconds = parseInt(new Date().getTime() / 1000, 10);
 
@@ -22,3 +26,16 @@ const leftMinutes = Math.floor(timeDistance / 60);
 timeDistance -= leftMinutes * 60;
 
 console.log(`Days: ${leftDays} / Hours: ${leftHours} / Minutes: ${leftMinutes} / Seconds: ${timeDistance}`);
+
+/**
+ * init typing animation
+ */
+/* eslint-disable no-new */
+new TypeWriting({
+/* eslint-enable no-new */
+	targetElement: document.querySelector('.confused-typing'),
+	inputString: catTypeing,
+	typingInterval: 50,
+	blinkInterval: '1s',
+	cursorColor: palette.darkBlack,
+});

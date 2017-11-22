@@ -57,5 +57,8 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.5"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "typewriting": "^1.2.7"
+  }
 }
