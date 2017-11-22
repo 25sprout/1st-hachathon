@@ -20,10 +20,10 @@ const updateTime = (timeObject) => {
 		timeSelector.querySelector('.minutes > .value').innerText = formatNumber(timeObject.minutes);
 	}
 
-	if (timeObject.seconds !== timer.seconds) {
-		timer.seconds = timeObject.seconds;
-		timeSelector.querySelector('.seconds > .value').innerText = formatNumber(timeObject.seconds);
-	}
+	/**
+	 * second always changes
+	 */
+	timeSelector.querySelector('.seconds > .value').innerText = formatNumber(timeObject.seconds);
 };
 
 export default updateTime;
