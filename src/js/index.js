@@ -6,28 +6,21 @@ import '../css/index.css';
 import '../css/confused-typing.css';
 import '../css/banner-section.css';
 import '../css/countdown-timer.css';
-import { hachathonDate, startTiming, catTypeing } from './appConfig';
+import { catTypeing } from './appConfig';
+import countdown from './countdown';
+import updateTime from './updateTime';
 
-const nowTimeSeconds = parseInt(new Date().getTime() / 1000, 10);
+/**
+ * first shot
+ */
+updateTime(countdown());
 
-const start = hachathonDate;
-start.setHours(parseInt(startTiming.hour, 10));
-start.setMinutes(parseInt(startTiming.minute, 10));
-start.setSeconds(0, 0);
-
-const startTimeSeconds = parseInt(start.getTime() / 1000, 10);
-let timeDistance = startTimeSeconds - nowTimeSeconds;
-
-const leftDays = Math.floor(timeDistance / 60 / 60 / 24);
-timeDistance -= leftDays * 24 * 60 * 60;
-
-const leftHours = Math.floor(timeDistance / 60 / 60);
-timeDistance -= leftHours * 60 * 60;
-
-const leftMinutes = Math.floor(timeDistance / 60);
-timeDistance -= leftMinutes * 60;
-
-console.log(`Days: ${leftDays} / Hours: ${leftHours} / Minutes: ${leftMinutes} / Seconds: ${timeDistance}`);
+/**
+ * execute it every second
+ */
+setInterval(() => {
+	updateTime(countdown());
+}, 1000);
 
 /**
  * init typing animation
