@@ -75,7 +75,7 @@ const webpackDevConfig = {
 			}
 		),
 	].concat(base.plugins.htmlWebpackPlugin),
-	devtool: 'eval-source-map',
+	devtool: 'eval',
 };
 
 export default webpackDevConfig;
