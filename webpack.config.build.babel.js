@@ -9,7 +9,7 @@ const webpackBuildConfig = {
 	output: {
 		path: path.join(__dirname, 'build'),
 		filename: '[hash:13].js',
-		publicPath: '/',
+		publicPath: '/1st-hackathon/',
 	},
 	module: {
 		rules: base.module.rules.concat(
