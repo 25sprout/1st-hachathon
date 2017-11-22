@@ -6,7 +6,7 @@ end_of_line = lf
 indent_style = tab
 indent_size = 4
 
-[{.gitlab-ci.yml, package.json}]
+[{.gitlab-ci.yml,package.json}]
 charset = utf-8
 end_of_line = lf
 indent_style = space
