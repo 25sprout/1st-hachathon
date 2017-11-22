@@ -10,6 +10,8 @@ import { catTypeing } from './appConfig';
 import countdown from './countdown';
 import updateTime from './updateTime';
 
+const reversedCatTyping = [...catTypeing].reverse().join('');
+
 /**
  * first shot
  */
@@ -22,15 +24,26 @@ setInterval(() => {
 	updateTime(countdown());
 }, 1000);
 
+const comingAgain = (typeObject, inputString) => {
+	document.body.classList.add('invert');
+
+	setTimeout(() => {
+		document.body.classList.remove('invert');
+		typeObject.rewrite(inputString, () => {
+			comingAgain(typeObject, inputString === catTypeing ? reversedCatTyping : catTypeing);
+		});
+	}, 1000);
+};
+
 /**
  * init typing animation
  */
-/* eslint-disable no-new */
-new TypeWriting({
-/* eslint-enable no-new */
+const typeWriting = new TypeWriting({
 	targetElement: document.querySelector('.confused-typing'),
 	inputString: catTypeing,
 	typingInterval: 50,
 	blinkInterval: '1s',
 	cursorColor: palette.darkBlack,
+}, () => {
+	comingAgain(typeWriting, reversedCatTyping);
 });

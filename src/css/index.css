@@ -1,3 +1,4 @@
-.hello {
-	content: 'world';
+body.invert {
+	background-color: #000;
+	filter: invert(1);
 }
