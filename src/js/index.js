@@ -1,3 +1,4 @@
+import '../css/common.css';
 import '../css/index.css';
 import { hachathonDate, startTiming } from './appConfig';
 
