@@ -17,4 +17,11 @@ export const deadline = {
 export const catTypeing = 'aljjjgaaaaaaaaaaaaaaaaaaaaaaam,32;iop9gy7uk/lm;\\\\\\\\\\\\\\\\\\\\\\\\\\aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaayyyyyyyy................s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@iooooooooooooooooooooooooooooooooooooooifffffffffffffffffffffffffffffff';
 /* eslint-enable max-len */
 
+export const timer = {
+	days: 0,
+	hours: 0,
+	minutes: 0,
+	seconds: 0,
+};
+
 export default 'CONFIG';
