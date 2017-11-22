@@ -5,6 +5,10 @@
 	justify-content: center;
 	height: 100vh;
 
+	& > .countdown-timer {
+		margin-bottom: -40px;
+	}
+
 	& > .cat {
 		width: 319px;
 		height: 242px;
@@ -15,20 +19,19 @@
 		width: 240px;
 		height: 128px;
 		position: relative;
-
-		& > img {
-			width: 100%;
-		}
+		background-image: url(../images/title.png);
+		background-size: 100%;
 
 		&::before,
 		&::after {
 			content: '';
-			width: 80px;
-			height: 4px;
+			width: 100px;
+			height: 3px;
 			background-color: var(--darkBlack);
+			border-radius: 2px;
 			position: absolute;
 			left: -130px;
-			top: calc(50% - 2px);
+			top: calc(50% + 7px);
 		}
 
 		&::after {
