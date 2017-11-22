@@ -4,6 +4,8 @@ import palette from '../../config/palette.json';
 import '../css/common.css';
 import '../css/index.css';
 import '../css/confused-typing.css';
+import '../css/banner-section.css';
+import '../css/countdown-timer.css';
 import { hachathonDate, startTiming, catTypeing } from './appConfig';
 
 const nowTimeSeconds = parseInt(new Date().getTime() / 1000, 10);

@@ -1,0 +1,54 @@
+@import 'https://fonts.googleapis.com/css?family=Just+Another+Hand';
+
+.countdown-timer {
+	font-family: 'Just Another Hand';
+	width: 387px;
+	height: 180px;
+	letter-spacing: 5px;
+	position: relative;
+
+	& > .days {
+		font-size: 75px;
+
+		& > .value {
+			font-size: 150px;
+			margin-bottom: -30px;
+		}
+	}
+
+	& > .hours {
+		font-size: 45px;
+		position: absolute;
+		left: 140px;
+		top: 30px;
+
+		& > .value {
+			font-size: 90px;
+			margin-bottom: -15px;
+		}
+	}
+
+	& > .minutes {
+		font-size: 30px;
+		position: absolute;
+		right: 110px;
+		top: 30px;
+
+		& > .value {
+			font-size: 60px;
+			margin-bottom: -10px;
+		}
+	}
+
+	& > .seconds {
+		font-size: 60px;
+		position: absolute;
+		right: 0;
+		bottom: -15px;
+
+		& > .value {
+			font-size: 120px;
+			margin-bottom: -30px;
+		}
+	}
+}
