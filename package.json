@@ -11,7 +11,8 @@
     "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.build.babel.js",
     "postbuild": "cp -r ./src/static docs",
-    "release": "standard-version"
+    "release": "standard-version",
+    "postrelease": "npm run build && git add . && git commit --amend --no-edit"
   },
   "repository": {
     "type": "git",
