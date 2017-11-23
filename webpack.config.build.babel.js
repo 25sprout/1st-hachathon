@@ -7,7 +7,7 @@ import websiteJson from './config/website.json';
 const webpackBuildConfig = {
 	entry: base.entry,
 	output: {
-		path: path.join(__dirname, 'build'),
+		path: path.join(__dirname, 'docs'),
 		filename: '[hash:13].js',
 		publicPath: '/1st-hackathon/',
 	},
