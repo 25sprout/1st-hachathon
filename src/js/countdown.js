@@ -1,4 +1,4 @@
-import { hachathonDate, startTiming } from './appConfig';
+import { startTiming } from './appConfig';
 
 const countdown = () => {
 	/**
@@ -6,13 +6,7 @@ const countdown = () => {
 	 */
 	const nowTimeSeconds = parseInt(new Date().getTime() / 1000, 10);
 
-	const start = hachathonDate;
-	start.setHours(parseInt(startTiming.hour, 10));
-	start.setMinutes(parseInt(startTiming.minute, 10));
-	start.setSeconds(0, 0);
-
-	const startTimeSeconds = parseInt(start.getTime() / 1000, 10);
-	let timeDistance = startTimeSeconds - nowTimeSeconds;
+	let timeDistance = (startTiming.getTime() / 1000) - nowTimeSeconds;
 
 	const leftDays = Math.floor(timeDistance / 60 / 60 / 24);
 	timeDistance -= leftDays * 24 * 60 * 60;
