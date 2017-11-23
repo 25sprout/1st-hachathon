@@ -6,11 +6,11 @@ import '../css/index.css';
 import '../css/confused-typing.css';
 import '../css/banner-section.css';
 import '../css/countdown-timer.css';
-import { catTypeing } from './appConfig';
+import { catTyping } from './appConfig';
 import countdown from './countdown';
 import updateTime from './updateTime';
 
-const reversedCatTyping = [...catTypeing].reverse().join('');
+const reversedCatTyping = [...catTyping].reverse().join('');
 
 /**
  * first shot
@@ -30,7 +30,7 @@ const comingAgain = (typeObject, inputString) => {
 	setTimeout(() => {
 		document.body.classList.remove('invert');
 		typeObject.rewrite(inputString, () => {
-			comingAgain(typeObject, inputString === catTypeing ? reversedCatTyping : catTypeing);
+			comingAgain(typeObject, inputString === catTyping ? reversedCatTyping : catTyping);
 		});
 	}, 1000);
 };
@@ -40,7 +40,7 @@ const comingAgain = (typeObject, inputString) => {
  */
 const typeWriting = new TypeWriting({
 	targetElement: document.querySelector('.confused-typing'),
-	inputString: catTypeing,
+	inputString: catTyping,
 	typingInterval: 50,
 	blinkInterval: '1s',
 	cursorColor: palette.darkBlack,
