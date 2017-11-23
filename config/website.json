@@ -1,10 +1,4 @@
 {
-	"domain": {
-		"production": {
-			"value": "www.example.com",
-			"ssl": false
-		}
-	},
 	"pages": {
 		"index": {
 			"entry": "index"
