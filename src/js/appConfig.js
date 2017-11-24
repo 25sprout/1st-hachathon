@@ -34,9 +34,9 @@ export const catTyping = totalTextNumber < defaultTypingText.length ?
 	`${defaultTypingText}${'y'.repeat(totalTextNumber - defaultTypingText.length)}`;
 
 export const timer = {
-	days: 0,
-	hours: 0,
-	minutes: 0,
+	days: null,
+	hours: null,
+	minutes: null,
 };
 
 export default 'CONFIG';
