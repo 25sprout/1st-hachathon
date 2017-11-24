@@ -3,12 +3,12 @@
  */
 const hachathonDate = new Date(2017, 10, 28);
 
-export const startTiming = hachathonDate;
+export const startTiming = new Date(hachathonDate.valueOf());
 startTiming.setHours(11);
 startTiming.setMinutes(0);
 startTiming.setSeconds(0, 0);
 
-export const deadlineTiming = hachathonDate;
+export const deadlineTiming = new Date(hachathonDate.valueOf());
 deadlineTiming.setHours(17);
 deadlineTiming.setMinutes(0);
 deadlineTiming.setSeconds(0, 0);
