@@ -1,6 +1,6 @@
 {
   "name": "hackathon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "25sprout 1th hackathon",
   "scripts": {
     "lint:js": "eslint src/js --config .eslintrc.json",
