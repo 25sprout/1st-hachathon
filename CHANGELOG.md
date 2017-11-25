@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/25sprout/1st-hackathon/compare/v1.0.2...v1.1.0) (2017-11-25)
+
+
+### Features
+
+* calculate deadline timing after hackathon beginning ([7d071f7](https://github.com/25sprout/1st-hackathon/commit/7d071f7))
+* support 480px screen RWD ([595d8c2](https://github.com/25sprout/1st-hackathon/commit/595d8c2))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/25sprout/1st-hackathon/compare/v1.0.0...v1.0.2) (2017-11-24)
 
