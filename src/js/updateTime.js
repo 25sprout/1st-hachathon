@@ -1,29 +1,34 @@
 import { timer } from './appConfig';
 
+const $timer = document.querySelector('.countdown-timer');
+
+const $day = $timer.querySelector('.days > .value');
+const $hour = $timer.querySelector('.hours > .value');
+const $minute = $timer.querySelector('.minutes > .value');
+const $second = $timer.querySelector('.seconds > .value');
+
 const formatNumber = (number) => number < 10 ? `0${number}` : number;
 
 const updateTime = (timeObject) => {
-	const timeSelector = document.querySelector('.countdown-timer');
-
 	if (timeObject.days !== timer.days) {
 		timer.days = timeObject.days;
-		timeSelector.querySelector('.days > .value').innerText = formatNumber(timeObject.days);
+		$day.innerText = formatNumber(timeObject.days);
 	}
 
 	if (timeObject.hours !== timer.hours) {
 		timer.hours = timeObject.hours;
-		timeSelector.querySelector('.hours > .value').innerText = formatNumber(timeObject.hours);
+		$hour.innerText = formatNumber(timeObject.hours);
 	}
 
 	if (timeObject.minutes !== timer.minutes) {
 		timer.minutes = timeObject.minutes;
-		timeSelector.querySelector('.minutes > .value').innerText = formatNumber(timeObject.minutes);
+		$minute.innerText = formatNumber(timeObject.minutes);
 	}
 
 	/**
 	 * second always changes
 	 */
-	timeSelector.querySelector('.seconds > .value').innerText = formatNumber(timeObject.seconds);
+	$second.innerText = formatNumber(timeObject.seconds);
 };
 
 export default updateTime;
