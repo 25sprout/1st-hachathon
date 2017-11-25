@@ -20,12 +20,12 @@ const defaultTypingText = 'aljjjgaaaaaaaaaaaaaaaaaaaaaaam,32;iop9gy7uk/lm;\\\\\\
 const textWidth = 48;
 const textHeight = 92;
 
-const totalTextNumber = Math.floor(window.innerWidth / textWidth) *
+const totalTextNumber = Math.floor(window.screen.width / textWidth) *
 	(
-		window.innerHeight % textHeight === 0 ?
-			window.innerHeight / textHeight
+		window.screen.height % textHeight === 0 ?
+			window.screen.height / textHeight
 			:
-			Math.floor(window.innerHeight / textHeight) + 1
+			Math.floor(window.screen.height / textHeight) + 1
 	);
 
 export const catTyping = totalTextNumber < defaultTypingText.length ?
