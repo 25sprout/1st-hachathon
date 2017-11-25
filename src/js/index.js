@@ -3,7 +3,7 @@ import palette from '../../config/palette.json';
 
 import '../css/common.css';
 import '../css/index.css';
-import '../css/confused-typing.css';
+import '../css/confuseing-typing.css';
 import '../css/banner-section.css';
 import '../css/countdown-timer.css';
 import { catTyping } from './appConfig';
@@ -39,7 +39,7 @@ const comingAgain = (typeObject, inputString) => {
  * init typing animation
  */
 const typeWriting = new TypeWriting({
-	targetElement: document.querySelector('.confused-typing'),
+	targetElement: document.querySelector('.confuseing-typing'),
 	inputString: catTyping,
 	typingInterval: 50,
 	blinkInterval: '1s',
