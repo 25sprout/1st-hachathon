@@ -1,16 +1,45 @@
 @import 'https://fonts.googleapis.com/css?family=Just+Another+Hand';
 
 :root {
+	/**
+	 * .countdown-timer size
+	 */
+	--wrapperWidth: 387px;
+	--wrapperHeight: 180px;
+
+	/**
+	 * days
+	 */
 	--daysValueSize: 150px;
+
+	/**
+	 * hours
+	 */
 	--hoursValueSize: 90px;
+	--hoursLeft: 140px;
+
+	/**
+	 * minutes
+	 */
 	--minutesValueSize: 60px;
+	--minutesLeft: 230px;
+
+	/**
+	 * seconds
+	 */
 	--secondsValueSize: 120px;
+	--secondsLeft: 300px;
+
+	/**
+	 * shrink percentage in RWD
+	 */
+	--rwdPercentage: 0.8;
 }
 
 .countdown-timer {
 	font-family: 'Just Another Hand';
-	width: 387px;
-	height: 180px;
+	width: var(--wrapperWidth);
+	height: var(--wrapperHeight);
 	letter-spacing: 5px;
 	position: relative;
 
@@ -26,7 +55,7 @@
 	& > .hours {
 		font-size: calc(var(--hoursValueSize) / 2);
 		position: absolute;
-		left: 140px;
+		left: var(--hoursLeft);
 		top: 30px;
 
 		& > .value {
@@ -38,7 +67,7 @@
 	& > .minutes {
 		font-size: calc(var(--minutesValueSize) / 2);
 		position: absolute;
-		left: 230px;
+		left: var(--minutesLeft);
 		top: 30px;
 
 		& > .value {
@@ -50,12 +79,54 @@
 	& > .seconds {
 		font-size: calc(var(--secondsValueSize) / 2);
 		position: absolute;
-		left: 300px;
+		left: var(--secondsLeft);
 		bottom: -15px;
 
 		& > .value {
 			font-size: var(--secondsValueSize);
 			margin-bottom: -30px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.countdown-timer {
+		width: calc(var(--wrapperWidth) * var(--rwdPercentage));
+		height: calc(var(--wrapperHeight) * var(--rwdPercentage));
+
+		& > .days {
+			font-size: calc(var(--daysValueSize) / 2 * var(--rwdPercentage));
+
+			& > .value {
+				font-size: calc(var(--daysValueSize) * var(--rwdPercentage));
+			}
+		}
+
+		& > .hours {
+			font-size: calc(var(--hoursValueSize) / 2 * var(--rwdPercentage));
+			left: calc(var(--hoursLeft) * var(--rwdPercentage));
+
+			& > .value {
+				font-size: calc(var(--hoursValueSize) * var(--rwdPercentage));
+			}
+		}
+
+		& > .minutes {
+			font-size: calc(var(--minutesValueSize) / 2 * var(--rwdPercentage));
+			left: calc(var(--minutesLeft) * var(--rwdPercentage));
+
+			& > .value {
+				font-size: calc(var(--minutesValueSize) * var(--rwdPercentage));
+			}
+		}
+
+		& > .seconds {
+			font-size: calc(var(--secondsValueSize) / 2 * var(--rwdPercentage));
+			left: calc(var(--secondsLeft) * var(--rwdPercentage));
+
+			& > .value {
+				font-size: calc(var(--secondsValueSize) * var(--rwdPercentage));
+			}
 		}
 	}
 }
