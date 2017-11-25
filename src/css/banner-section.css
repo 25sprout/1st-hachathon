@@ -40,3 +40,26 @@
 		}
 	}
 }
+
+@media screen and (max-width: 480px) {
+	.banner-section > .cat {
+		width: 255px;
+		height: auto;
+	}
+
+	.banner-section > .title {
+		width: 192px;
+		height: 102px;
+
+		&::before,
+		&::after {
+			width: 40px;
+			left: -60px;
+		}
+
+		&::after {
+			left: auto;
+			right: -60px;
+		}
+	}
+}
