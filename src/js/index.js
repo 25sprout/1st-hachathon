@@ -15,14 +15,28 @@ const reversedCatTyping = [...catTyping].reverse().join('');
 /**
  * first shot
  */
-updateTime(countdown());
+const outcome = countdown();
 
-/**
- * execute it every second
- */
-setInterval(() => {
-	updateTime(countdown());
-}, 1000);
+if (!outcome) {
+	updateTime(outcome);
+
+	/**
+	 * execute it every second
+	 */
+	setInterval(() => {
+		updateTime(countdown());
+	}, 1000);
+} else {
+	/**
+	 * oops! hackathon is over
+	 */
+	const $timer = document.querySelector('.countdown-timer');
+
+	$timer.querySelector('.days > .value').innerText = 'XX';
+	$timer.querySelector('.hours > .value').innerText = 'XX';
+	$timer.querySelector('.minutes > .value').innerText = 'XX';
+	$timer.querySelector('.seconds > .value').innerText = 'XX';
+}
 
 const comingAgain = (typeObject, inputString) => {
 	document.body.classList.add('invert');
