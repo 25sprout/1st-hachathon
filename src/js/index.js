@@ -17,7 +17,7 @@ const reversedCatTyping = [...catTyping].reverse().join('');
  */
 const outcome = countdown();
 
-if (!outcome) {
+if (outcome) {
 	updateTime(outcome);
 
 	/**
