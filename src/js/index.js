@@ -6,6 +6,8 @@ import '../css/index.css';
 import '../css/confuseing-typing.css';
 import '../css/banner-section.css';
 import '../css/countdown-timer.css';
+import '../css/project-wrapper.css';
+import '../css/member-sticker.css';
 import { catTyping } from './appConfig';
 import countdown from './countdown';
 import updateTime from './updateTime';

@@ -1,0 +1,74 @@
+@import 'https://fonts.googleapis.com/css?family=Contrail+One';
+
+:root {
+	--borderWidth: 8px;
+}
+
+.project-wrapper {
+	display: flex;
+	width: 80%;
+	max-width: 1080px;
+	margin: 0 auto;
+	background-color: white;
+	border: var(--borderWidth) solid var(--darkBlack);
+	font-family: '华文黑体';
+
+	& > .description {
+		width: 60%;
+		padding: 75px 60px;
+		font-size: 20px;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		border-left: var(--borderWidth) solid var(--darkBlack);
+	}
+
+	& > .main {
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+
+		& > .title {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 30px 40px;
+			font-size: 26px;
+			line-height: 1.3;
+			letter-spacing: 1px;
+			border-bottom: var(--borderWidth) solid var(--darkBlack);
+		}
+
+		& > .information {
+			display: flex;
+			flex: 1;
+			font-family: 'Contrail One';
+
+			& > .members {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				flex: 1;
+			}
+
+			& > .block {
+				display: flex;
+				flex-direction: column;
+				width: 160px;
+				background-color: var(--darkBlack);
+				border-left: var(--borderWidth) solid var(--darkBlack);
+				position: relative;
+
+				& > .link {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					height: 160px;
+					font-size: 30px;
+					letter-spacing: 2px;
+					background-color: var(--standard);
+					margin-top: auto;
+				}
+			}
+		}
+	}
+}
