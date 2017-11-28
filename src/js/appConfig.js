@@ -10,7 +10,7 @@ startTiming.setSeconds(0, 0);
 
 export const deadlineTiming = new Date(hachathonDate.valueOf());
 deadlineTiming.setHours(17);
-deadlineTiming.setMinutes(0);
+deadlineTiming.setMinutes(30);
 deadlineTiming.setSeconds(0, 0);
 
 /* eslint-disable max-len */
