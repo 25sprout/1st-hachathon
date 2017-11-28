@@ -31,7 +31,7 @@ const totalTextNumber = Math.floor(window.screen.width / textWidth) *
 export const catTyping = totalTextNumber < defaultTypingText.length ?
 	defaultTypingText.substr(0, totalTextNumber)
 	:
-	`${defaultTypingText}${'y'.repeat(totalTextNumber - defaultTypingText.length)}`;
+	`${defaultTypingText}${'v8,f'.repeat((totalTextNumber - defaultTypingText.length) / 4)}`;
 
 export const timer = {
 	days: null,
