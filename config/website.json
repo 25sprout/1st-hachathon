@@ -12,6 +12,14 @@
 			],
 			"description": "目標：利用 Firebase 製作社群媒體用的分享頁面<br/><br/>製作物：<br/>製作一個網頁可以自己上傳圖片、連結、Meta 內容，儲存於 Firebase 產生分享連結，可以在同一頁面撰寫 PO 文，一鍵分享至 Facebook<br/><br/>優化：<br/>如果連結是 Youtube, 會自動抓取圖片網址，標題等。",
 			"link": "https://github.com/25sprout/awesome-share"
+		},
+		{
+			"title": "【社群】不要再用 PicSee，看看 awesome-share 吧",
+			"members": [
+				"cathy"
+			],
+			"description": "目標：利用 Firebase 製作社群媒體用的分享頁面<br/><br/>製作物：<br/>製作一個網頁可以自己上傳圖片、連結、Meta 內容，儲存於 Firebase 產生分享連結，可以在同一頁面撰寫 PO 文，一鍵分享至 Facebook<br/><br/>優化：<br/>如果連結是 Youtube, 會自動抓取圖片網址，標題等。",
+			"link": "https://github.com/25sprout/awesome-share"
 		}
 	],
 	"port": {

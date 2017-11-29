@@ -1,0 +1,7 @@
+.team-wrapper {
+	margin-bottom: 100px;
+
+	& > .team-section {
+		margin-top: 100px;
+	}
+}

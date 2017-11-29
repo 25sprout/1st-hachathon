@@ -38,18 +38,20 @@ html(lang='zh-Hant')
 
 			.title
 
-		each team in htmlWebpackPlugin.options.teams
+		.team-wrapper
 
-			.project-wrapper
-				.main
-					.title= team.title
-					.information
-						.members
-							each member in team.members
-								.member-sticker
-									img.sticker(src=require('../images/sticker/' + member + '.png'))
-									.name= member
-						.block
-							if team.link
-								a.link(href= team.link) LINK
-				.description!= team.description
+			each team in htmlWebpackPlugin.options.teams
+
+				.team-section
+					.main
+						.title= team.title
+						.information
+							.members
+								each member in team.members
+									.member-sticker
+										img.sticker(src=require('../images/sticker/' + member + '.png'))
+										.name= member
+							.block
+								if team.link
+									a.link(href= team.link) LINK
+					.description!= team.description
