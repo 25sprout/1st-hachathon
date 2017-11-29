@@ -73,4 +73,13 @@
 			}
 		}
 	}
+
+	&:nth-child(2n) {
+		flex-direction: row-reverse;
+
+		& > .description {
+			border-left: none;
+			border-right: var(--borderWidth) solid var(--darkBlack);
+		}
+	}
 }
