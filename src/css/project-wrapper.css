@@ -65,8 +65,10 @@
 					height: 160px;
 					font-size: 30px;
 					letter-spacing: 2px;
+					color: var(--darkBlack);
 					background-color: var(--standard);
 					margin-top: auto;
+					text-decoration: none;
 				}
 			}
 		}

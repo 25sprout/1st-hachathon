@@ -38,28 +38,18 @@ html(lang='zh-Hant')
 
 			.title
 
-		.project-wrapper
-			.main
-				.title 【社群】不要再用 PicSee，看看 awesome-share 吧
-				.information
-					.members
-						.member-sticker
-							img.sticker(src=require('../images/sticker/cathy.png'))
-							.name Cathy
-					.block
-						a.link LINK
-			.description
-				| 目標：利用 Firebase 製作社群媒體用的分享頁面
-				br
-				br
-				| 製作物：
-				br
-				| 製作一個網頁可以自己上傳圖片、連結、Meta 內容
-				| 儲存於 Firebase
-				| 產生分享連結
-				| 可以在同一頁面撰寫 PO 文，一鍵分享至 Facebook
-				br
-				br
-				| 優化：
-				br
-				| 如果連結是 Youtube, 會自動抓取圖片網址，標題等。
+		each team in htmlWebpackPlugin.options.teams
+
+			.project-wrapper
+				.main
+					.title= team.title
+					.information
+						.members
+							each member in team.members
+								.member-sticker
+									img.sticker(src=require('../images/sticker/' + member + '.png'))
+									.name= member
+						.block
+							if team.link
+								a.link(href= team.link) LINK
+				.description!= team.description
