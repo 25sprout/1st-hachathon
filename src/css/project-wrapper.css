@@ -8,9 +8,10 @@
 	display: flex;
 	width: 80%;
 	max-width: 1080px;
-	margin: 0 auto;
+	margin: 100px auto 0;
 	background-color: white;
 	border: var(--borderWidth) solid var(--darkBlack);
+	border-radius: 15px;
 	font-family: '华文黑体';
 
 	& > .description {
@@ -72,5 +73,9 @@
 				}
 			}
 		}
+	}
+
+	&:last-of-type {
+		margin-bottom: 100px;
 	}
 }
