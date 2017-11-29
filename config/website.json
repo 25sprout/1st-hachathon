@@ -36,7 +36,32 @@
 			],
 			"description": "偵測到人臉就會加上一層黑影與悲傷的特效和音效，邊緣人專用 :sob: ",
 			"link": "https://github.com/25sprout/FaceDetection"
+		},
+		{
+			"title": "做一個 SurveyCake Logo 的動畫",
+			"members": [
+				"jenny"
+			],
+			"description": "功能如題<br/><br/>優化：<br/>加入更多細節",
+			"link": ""
+		},
+		{
+			"title": "遙控攝影車",
+			"members": [
+				"hsiao", "emma", "lisa"
+			],
+			"description": "用 raspberry pi + 攝影鏡頭，製作一個可以遠端查看攝影畫面的攝影車",
+			"link": "https://github.com/25sprout/CamCar"
+		},
+		{
+			"title": "【財務】用 Google Script 養護會計的肝",
+			"members": [
+				"viola"
+			],
+			"description": "目標：用 Google Script 將日記帳資料自動轉為即時報表與分析，取代需手動篩選、匯出、拉格式的 Excel 報表<br/><br/>製作物：<br/>即時明細分類帳，科目明細清單隨資料輸入馬上更新；即時財務戰情室，重要財務資訊一目了然，每日製表無負擔；外帳報支表格產生器，總額拆分、差旅匯率等擾人表單也能彈指間完成",
+			"link": ""
 		}
+
 	],
 	"port": {
 		"webpackServer": 3000,
