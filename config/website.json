@@ -14,12 +14,28 @@
 			"link": "https://github.com/25sprout/awesome-share"
 		},
 		{
-			"title": "【社群】不要再用 PicSee，看看 awesome-share 吧",
+			"title": "【2018 WishPool】Android 桌面小工具",
 			"members": [
-				"cathy"
+				"kevin"
 			],
-			"description": "目標：利用 Firebase 製作社群媒體用的分享頁面<br/><br/>製作物：<br/>製作一個網頁可以自己上傳圖片、連結、Meta 內容，儲存於 Firebase 產生分享連結，可以在同一頁面撰寫 PO 文，一鍵分享至 Facebook<br/><br/>優化：<br/>如果連結是 Youtube, 會自動抓取圖片網址，標題等。",
-			"link": "https://github.com/25sprout/awesome-share"
+			"description": "目標：讓小工具顯示當前最高機率的三個願望以及最新願望<br/><br/>完成進度：可以顯示排行榜願望、但還無法自動更新、需要打開app之後才會再度call API<br/><br/>後續：補上最新願望並更新架上的app",
+			"link": ""
+		},
+		{
+			"title": "【UI Redesign】改造一下郵局的首頁",
+			"members": [
+				"zaou"
+			],
+			"description": "目標：用 Adobe Xd 重新設計一下中華郵政的首頁<br/><br/>製作物：<br/>redesign 中華郵政的首頁<br/><br/>優化：<br/>沒有很嚴謹的規劃視覺，所以配色比較是依靠直覺，流程跟體驗還需要再規劃。",
+			"link": "https://xd.adobe.com/view/35c40baf-9c1b-482f-ba57-bfb8590c81cc/"
+		},
+		{
+			"title": "FaceDetection人臉偵測",
+			"members": [
+				"bill"
+			],
+			"description": "偵測到人臉就會加上一層黑影與悲傷的特效和音效，邊緣人專用 :sob: ",
+			"link": "https://github.com/25sprout/FaceDetection"
 		}
 	],
 	"port": {
