@@ -1,0 +1,13 @@
+.member-sticker {
+	text-align: center;
+
+	& > .sticker {
+		width: 100px;
+		height: 100px;
+	}
+
+	& > .name {
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+}

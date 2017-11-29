@@ -110,6 +110,7 @@ const webpackBaseConfig = {
 						removeScriptTypeAttributes: true,
 						removeStyleLinkTypeAttributes: true,
 					},
+					teams: websiteJson.teams,
 				})
 			);
 
