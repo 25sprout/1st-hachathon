@@ -22,16 +22,17 @@ const textHeight = 92;
 
 const totalTextNumber = Math.floor(window.screen.width / textWidth) *
 	(
-		window.screen.height % textHeight === 0 ?
-			window.screen.height / textHeight
+		document.body.offsetHeight % textHeight === 0 ?
+			document.body.offsetHeight / textHeight
 			:
-			Math.floor(window.screen.height / textHeight) + 1
+			Math.floor(document.body.offsetHeight / textHeight) + 1
 	);
 
 export const catTyping = totalTextNumber < defaultTypingText.length ?
 	defaultTypingText.substr(0, totalTextNumber)
 	:
-	`${defaultTypingText}${'v8,f'.repeat((totalTextNumber - defaultTypingText.length) / 4)}`;
+	defaultTypingText.repeat(Math.ceil(totalTextNumber / defaultTypingText.length))
+		.substr(0, totalTextNumber - 1);
 
 export const timer = {
 	days: null,
