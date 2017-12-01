@@ -16,7 +16,7 @@
 		{
 			"title": "【2018 WishPool】Android 桌面小工具",
 			"members": [
-				"kevin"
+				"kevin", "chels"
 			],
 			"description": "目標：讓小工具顯示當前最高機率的三個願望以及最新願望<br/><br/>完成進度：可以顯示排行榜願望、但還無法自動更新、需要打開app之後才會再度call API<br/><br/>後續：補上最新願望並更新架上的app",
 			"link": ""
@@ -48,9 +48,9 @@
 		{
 			"title": "遙控攝影車",
 			"members": [
-				"hsiao", "emma", "lisa"
+				"hsiao", "emma", "lisa", "irene"
 			],
-			"description": "用 raspberry pi + 攝影鏡頭，製作一個可以遠端查看攝影畫面的攝影車",
+			"description": "目標：做一台有攝影機的遙控車，並且讓攝影畫面可以透過網路看到<br/><br/>製作媒材：raspberry pi、pi camera、遙控車<br/><br/>製作物：raspberry pi 架設 server 搭配 pi camera 錄製畫面，並將裝置綁在遙控車上，讓專案成員 (湯包們) 可以遠端監控辦公室的同事<br/><br/>未來發展方向：增加麥克風、聽筒以及遙控車承載能力，改造成零食運輸車。",
 			"link": "https://github.com/25sprout/CamCar"
 		},
 		{
@@ -60,8 +60,23 @@
 			],
 			"description": "目標：用 Google Script 將日記帳資料自動轉為即時報表與分析，取代需手動篩選、匯出、拉格式的 Excel 報表<br/><br/>製作物：<br/>即時明細分類帳，科目明細清單隨資料輸入馬上更新；即時財務戰情室，重要財務資訊一目了然，每日製表無負擔；外帳報支表格產生器，總額拆分、差旅匯率等擾人表單也能彈指間完成",
 			"link": ""
+		},
+		{
+			"title": "【專案名稱我已經想好了】如果我是 DJ",
+			"members": [
+				"peipei", "lee"
+			],
+			"description": "目標：建置點歌系統，讓大家可以拿到 youtube 網址就可以使用 slack bot 或是 web 點歌．<br/><br/>製作物：<br/>歌單、暫停、大小聲等等功能",
+			"link": "https://github.com/25sprout/caster-bot"
+		},
+		{
+			"title": "【哈味】二入一出音訊配適器",
+			"members": [
+				"jonas"
+			],
+			"description": "目標：利用電路設計使不支援通話的遊戲之音樂與手機通訊軟體的音源並存。<br/><br/>製作物： 四環 3.5mm 耳機母孔 * 2(具麥克風功能) + 三環 3.5mm 耳機母孔(純音訊)<br/><br/>優化：<br/>防止音訊電流逆流至音源輸出裝置，以及可切換一般腳位定義與 iPhone 腳位定義。",
+			"link": ""
 		}
-
 	],
 	"port": {
 		"webpackServer": 3000,
