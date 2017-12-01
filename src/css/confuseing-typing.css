@@ -5,7 +5,7 @@
 	font-size: 80px;
 	color: var(--standard);
 	word-wrap: break-word;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -1;

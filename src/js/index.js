@@ -58,7 +58,7 @@ const comingAgain = (typeObject, inputString) => {
 const typeWriting = new TypeWriting({
 	targetElement: document.querySelector('.confuseing-typing'),
 	inputString: catTyping,
-	typingInterval: 50,
+	typingInterval: 20,
 	blinkInterval: '1s',
 	cursorColor: palette.darkBlack,
 }, () => {
