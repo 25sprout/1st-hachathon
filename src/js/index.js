@@ -14,6 +14,7 @@ import countdown from './countdown';
 import updateTime from './updateTime';
 import appendImageToTeam from './appendImageToTeam';
 import wineImage from '../images/wine.png';
+import tangImage from '../images/mad-tang.png';
 
 const reversedCatTyping = [...catTyping].reverse().join('');
 
@@ -71,3 +72,8 @@ const typeWriting = new TypeWriting({
  * add wine image
  */
 appendImageToTeam(wineImage, 'wine');
+
+/**
+ * add tang image
+ */
+appendImageToTeam(tangImage, 'tang');

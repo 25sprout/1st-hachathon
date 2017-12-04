@@ -14,6 +14,12 @@
 	font-family: '华文黑体';
 	position: relative;
 
+	&:nth-child(2n + 1) > .tang {
+		transform: scaleX(-1);
+		left: auto;
+		right: -30px;
+	}
+
 	&:nth-child(2n) {
 		flex-direction: row-reverse;
 
@@ -88,6 +94,13 @@
 		position: absolute;
 		top: -100px;
 		right: -50px;
+	}
+
+	& > .tang {
+		width: 40%;
+		position: absolute;
+		left: -30px;
+		bottom: -70px;
 	}
 
 	& > .description {
