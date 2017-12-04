@@ -12,6 +12,7 @@ import '../css/member-sticker.css';
 import { catTyping } from './appConfig';
 import countdown from './countdown';
 import updateTime from './updateTime';
+import wineImage from '../images/wine.png';
 
 const reversedCatTyping = [...catTyping].reverse().join('');
 
@@ -64,3 +65,26 @@ const typeWriting = new TypeWriting({
 }, () => {
 	comingAgain(typeWriting, reversedCatTyping);
 });
+
+/**
+ * add wine image
+ */
+const $teamWrapper = document.querySelector('.team-wrapper');
+
+const randomTeam = () => $teamWrapper.childNodes[
+	Math.floor(Math.random() * $teamWrapper.childElementCount)
+];
+
+/**
+ * create wine image tag
+ */
+const wineImgTag = document.createElement('img');
+wineImgTag.setAttribute('src', wineImage);
+wineImgTag.classList.add('wine');
+
+const $wineTeam = randomTeam();
+
+$wineTeam.insertBefore(
+	wineImgTag,
+	$wineTeam.querySelector('.description'),
+);
