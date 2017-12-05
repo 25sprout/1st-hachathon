@@ -71,7 +71,9 @@ const typeWriting = new TypeWriting({
 /**
  * add wine image
  */
-appendImageToTeam(wineImage, 'wine');
+if (window.screen.width > 480) {
+	appendImageToTeam(wineImage, 'wine');
+}
 
 /**
  * add tang image

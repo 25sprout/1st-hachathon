@@ -12,3 +12,14 @@
 		text-transform: uppercase;
 	}
 }
+
+@media screen and (max-width: 720px) {
+	.member-sticker {
+		box-sizing: border-box;
+
+		& > .sticker {
+			width: 80px;
+			height: 80px;
+		}
+	}
+}

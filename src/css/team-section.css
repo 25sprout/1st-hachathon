@@ -162,3 +162,67 @@
 		position: relative;
 	}
 }
+
+@media screen and (max-width: 720px) {
+	.team-section {
+		display: block;
+
+		&:nth-child(2n) > .description {
+			border-right: none;
+		}
+
+		& > .main {
+			width: 100%;
+
+			& > .information > .members {
+				flex-direction: row;
+				flex-flow: row wrap;
+
+				& > .member-sticker {
+					width: 50%;
+				}
+			}
+		}
+
+		& > .description {
+			box-sizing: border-box;
+			width: 100%;
+			border-left: none;
+			border-top: var(--borderWidth) solid var(--darkBlack);
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.team-section {
+		& > .main {
+			& > .title {
+				padding: 30px;
+				font-size: 24px;
+			}
+
+			& > .information {
+				& > .members > .member-sticker {
+					width: 100%;
+				}
+
+				& > .block {
+					width: 100px;
+
+					& > .link {
+						height: 100px;
+					}
+				}
+			}
+		}
+
+		& > .tang {
+			width: 60%;
+		}
+
+		& > .description {
+			padding: 30px;
+			font-size: 16px;
+		}
+	}
+}
