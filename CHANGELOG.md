@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/25sprout/1st-hackathon/compare/v1.4.0...v1.4.1) (2017-12-05)
+
+
+### Bug Fixes
+
+* change font-familt ([35c12e8](https://github.com/25sprout/1st-hackathon/commit/35c12e8))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/25sprout/1st-hackathon/compare/v1.3.0...v1.4.0) (2017-12-05)
 
