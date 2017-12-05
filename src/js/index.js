@@ -9,6 +9,7 @@ import '../css/countdown-timer.css';
 import '../css/team-wrapper.css';
 import '../css/team-section.css';
 import '../css/member-sticker.css';
+import '../css/footer-block.css';
 import { catTyping } from './appConfig';
 import countdown from './countdown';
 import updateTime from './updateTime';
