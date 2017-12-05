@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/25sprout/1st-hackathon/compare/v1.3.0...v1.4.0) (2017-12-05)
+
+
+### Features
+
+* RWD ([9da161d](https://github.com/25sprout/1st-hackathon/commit/9da161d))
+* add footer section ([474dea8](https://github.com/25sprout/1st-hackathon/commit/474dea8))
+* make link vibrate when hover ([7e07814](https://github.com/25sprout/1st-hackathon/commit/7e07814))
+* show a mad tang on a team section ([30a5aee](https://github.com/25sprout/1st-hackathon/commit/30a5aee))
+* show a wine bottle on a team section ([d8075f4](https://github.com/25sprout/1st-hackathon/commit/d8075f4))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/25sprout/1st-hackathon/compare/v1.2.2...v1.3.0) (2017-12-01)
 
