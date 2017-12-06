@@ -22,7 +22,7 @@ const textHeight = 92;
 
 const bodyHeightWithoutFooter = document.body.offsetHeight - 160;
 
-const totalTextNumber = Math.floor(window.screen.width / textWidth) *
+const totalTextNumber = Math.floor(window.innerWidth / textWidth) *
 	(
 		bodyHeightWithoutFooter % textHeight === 0 ?
 			bodyHeightWithoutFooter / textHeight
