@@ -16,4 +16,6 @@
 
 > 懷念一下學妹幫大家寫程式的時光，療癒總是大於崩潰一些 （吧）。
 
-![meow](./meow.png)
+![meow](./meow.jpg)
+
+photo by awon
